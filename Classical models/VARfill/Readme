@@ -1,0 +1,3 @@
+In this folder you can find the example to get the out-of-sample data for the VAR(3) models with "fill" scheme. Unzip the files of "data_Monthly_Homicides"
+in the same folder you will run de "Varfill.R" file. You will get the same files which are already store in the zip file "results_file". The files "Summary" read the
+results for each case and compare them with the real values. You will have to change the route to read from the files
