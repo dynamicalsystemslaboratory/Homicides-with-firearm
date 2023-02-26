@@ -2,7 +2,7 @@
 
 This readme file will help you replicate the results in the paper titled "On the use of dynamic factor modeling to predict homicides with firearm in the United States"
 
-1) The extracted time series and the same series after their respective seasonal adjustment and detrending, are located in the file "time_series_original_&_sa_det-xlsx". A code to get the latter is in the "deseason.R" file.
+1) The extracted time series and the same series after their respective seasonal adjustment and detrending, are located in the file "time_series_original_&_sa_det-xlsx". The latter can be also obtained with the "deseason.R" file.
 
 2) A dataset as in December 2021 can be found in the file "data_Monthly_homicides_1221.xlsx".  The file to get the parameters for DFM, their standard deviations and p-values, together with the residuals analysis for the model with this whole sample can be found in the file "DFM_MonthHom_guns_1factor.R". Also the plot of the factor and reconstructed monthly homicides with firearm series can be obtained with the same code. 
 
