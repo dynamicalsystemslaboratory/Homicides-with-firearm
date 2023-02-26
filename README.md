@@ -6,7 +6,7 @@ This readme file will help you replicate the results in the paper titled "On the
 
 2) A dataset as in December 2021 can be found in the file "data_Monthly_homicides_1221.xlsx".  The file to get the parameters for DFM, their standard deviations and p-values, together with the residuals analysis for the model with this whole sample can be found in the file "DFM_MonthHom_guns_1factor.R". Also the plot of the factor and reconstructed monthly homicides with firearm series can be obtained with the same code. 
 
-The code is set so that an out of sample exercise can be performed when the datasets are provided. A second database as in november 2021 can be found in the file "data_Monthly_Homicides_1121.xlsx" so the output with these two datasets can be obtained.
+The code is set so that an out of sample exercise can be performed when the datasets are provided. A second database as in november 2021 can be found in the file "data_Monthly_Homicides_1121.xlsx" so the output with these two datasets can be obtained. The folder "DFM" reproduce the out-of-sample exercise with all the pseudo real time dataframes. 
 
 3) The files "Forecasts_OUT_back_tri.xlsx", "Forecasts_OUT_now_tri.xlsx", and "DataForPTTest_tri.xlsx" summarize the forecasts that are passed to get the HLN test and the PT test. Those test can be done with the HLN.R", which uses those forecasts.
 
