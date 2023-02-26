@@ -59,7 +59,8 @@ if(series[i] %in% c("Homicides.with.Guns")){
   df_adjusted <- cbind(df_adjusted,c(rep(NA,dim(df_adjusted)[1]-length(df$detrended))+1,df$detrended))
   colnames(df_adjusted)[i+1] <- paste0(series[i],"_det")
 } else if (series[i] %in% c("MO.riots","EPU","MO_unemp","Twitter.number.Homicide")){
-  df <- data.frame(data$Date,data[,2],x,x-data_seas[,3],data_seas_3[,2]+data_seas_3[,4])
+  df <- data.frame(data$Date,data[,2],data_seas_3[,3]+data_seas_3[,4],data_seas_3[,4],data_seas_3[,2]+data_seas_3[,4])
+  colnames(df) <- c("dates","data","detrended","detrended_sa","sa")
   df_adjusted <- cbind(df_adjusted,c(rep(NA,dim(df_adjusted)[1]-length(df$detrended_sa))+1,df$detrended_sa))
   colnames(df_adjusted)[i+1] <- paste0(series[i],"_sa_det")
 }
@@ -68,3 +69,4 @@ if(series[i] %in% c("Homicides.with.Guns")){
 }
 
 
+View(df_adjusted)
