@@ -62,8 +62,8 @@ indica0<-read_xlsx(paste0("data_Monthly_Homicides_",momento,".xlsx"),sheet=1,col
 
 
 fecha<-as.matrix(indica0[14:(nrow(indica0)),1])
-indica<-as.matrix(indica0[14:(nrow(indica0)),2:10])
-indica <- indica[,-c(6,7,8)]
+indica<-as.matrix(indica0[14:(nrow(indica0)),2:9])
+indica <- indica[,-c(6,7)]
 gg1<-subset(indica[,2], indica[,2]!=99999)
 me1<-mean2(gg1)
 std1<-sd(gg1)
