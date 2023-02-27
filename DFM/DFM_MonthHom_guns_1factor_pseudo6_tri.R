@@ -58,7 +58,7 @@ conv <- c()
 
 for (momento in w){
 
-indica0<-read_xlsx(paste0("datos_Monthly_Homicides_",momento,".xlsx"),sheet=1,col_names = TRUE) 
+indica0<-read_xlsx(paste0("data_Monthly_Homicides_",momento,".xlsx"),sheet=1,col_names = TRUE) 
 
 
 fecha<-as.matrix(indica0[14:(nrow(indica0)),1])
